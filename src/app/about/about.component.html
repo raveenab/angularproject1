@@ -1,0 +1,11 @@
+<p>
+  about works!
+</p>
+<button (click) = "onClickMe()">Click me</button>
+{{ClickMessage}}
+<br>---------------------------<br>
+<input #box (keyup)="0">
+<p>{{box.value}}</p>
+<br>---------------------------<br>
+<input #boxe (keyup.enter)="onEnter(boxe.value)">
+<p>{{value}}</p>

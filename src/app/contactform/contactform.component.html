@@ -1,0 +1,38 @@
+<p>
+  contactform works!
+</p>
+<form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+  <fieldset>
+    <div>
+      <label>First Name</label>
+      <input type="text">
+    </div>
+
+    <div>
+      <label>Last Name</label>
+      <input type="text">
+    </div>
+  </fieldset>
+
+  <div>
+    <label>Email</label>
+    <input type="email">
+  </div>
+
+  <div>
+    <label>Password</label>
+    <input type="password">
+  </div>
+
+  <div>
+    <label>Language</label>
+    <select>
+      <option value="">select language</option>
+      <option *ngFor="let languages of language" value="languages">{{languages.name}}</option>
+    </select>
+  </div>
+
+  <div>
+    <button type="submit" class="btn btn-primary">submit</button>
+  </div>
+</form>
